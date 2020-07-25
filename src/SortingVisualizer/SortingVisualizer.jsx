@@ -1,10 +1,9 @@
 import React from 'react'
 import './SortingVisualizer.css'
 
-// Change this value for the speed of the animations.
+// Change this  for the speed of the animations.
 const ANIMATION_SPEED_MS = 1;
 
-// Change this value for the number of bars (value) in the array.
 const NUMBER_OF_ARRAY_BARS = 270;
 
 // This is the main color of the array bars.
@@ -51,9 +50,9 @@ export default class SortingVisualizer extends React.Component {
                 ))}
                 <button onClick={() => this.resetArray()}>Generate New Array</button>
                 <button onClick={() => this.mergeSort()}>Merge Sort</button>
-                <button onClick={() => this.quickSort()}>Quick Sort</button>
+                {/* <button onClick={() => this.quickSort()}>Quick Sort</button>
                 <button onClick={() => this.heapSort()}>Heap Sort</button>
-                <button onClick={() => this.bubbleSort()}>Bubble Sort</button>
+                <button onClick={() => this.bubbleSort()}>Bubble Sort</button> */}
                 <button onClick={() => this.testSortingAlgorithms()}>
                     Test Sorting Algorithms (BROKEN)
         </button>
